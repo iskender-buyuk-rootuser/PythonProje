@@ -2,7 +2,7 @@ try:
     import os
     import time
     import colorama
-    from ornekler import ornek1,ornek2,ornek3
+    from ornekler import ornek1,ornek2,ornek3,ornek4,ornek5
     colorama.init()
     def main():
         while True:
@@ -24,25 +24,38 @@ try:
                     print("[1] 1-19'a kadar sayma ornekler/ornek1.py")
                     print("[2] 20-1'e kadar geri sayma ornekler/ornek2.py")
                     print("[3] liste sayma ornekler/ornek3.py")
+                    print("[4] kelime harf sayma ornekler/ornek4.py")
+                    print("[5] Faktöriyel hesaplama ornekler/ornek5.py")
                     
                     prompt2=input("Hangi rehberi istiyorsunuz:: ")
 
                     if prompt2 == "1":
+                        os.system("cls")
                         ornek1.start()
-                        print("2 saniye bekleyiniz kaynak kodu açılcak")
-                        time.sleep(2)
+                        input("bir tuşa basınız kaynak kodu açılcaktır")
                         print("Kaynak Kodu not defterinde açılıyor")
                         os.system(f"notepad ornekler/ornek1.py")
                     elif prompt2 == "2":
+                        os.system("cls")
                         ornek2.start()
-                        print("2 saniye bekleyiniz kaynak kodu açılcak")
-                        time.sleep(2)
+                        input("bir tuşa basınız kaynak kodu açılcaktır")
                         print("Kaynak Kodu not defterinde açılıyor")
                         os.system(f"notepad ornekler/ornek1.py")
                     elif prompt2 == "3":
+                        os.system("cls")
                         ornek3.start()
                         input("bir tuşa basınız kaynak kodu açılcaktır")
                         os.system(f"notepad ornekler/ornek3.py")
+                    elif prompt2 == "4":
+                        os.system("cls")
+                        ornek4.start()
+                        input("bir tuşa basınız kaynak kodu açılcaktır")
+                        os.system(f"notepad ornekler/ornek4.py")
+                    elif prompt2 == "5":
+                        os.system("cls")
+                        ornek5.start()
+                        input("bir tuşa basınız kaynak kodu açılcaktır")
+                        os.system(f"notepad ornekler/ornek5.py")
                     else:
                         print("Yanlış Komut")
                     pass
